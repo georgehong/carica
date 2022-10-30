@@ -6,9 +6,12 @@
 //
 
 #include <iostream>
+#include <filesystem>
+// Local file imports should use quotation marks
+#include "CaricaDemo.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    entrypoint();
+    demo_pointers();
     return 0;
 }

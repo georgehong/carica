@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		22D5B489290E43DF00D3067E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22D5B488290E43DF00D3067E /* main.cpp */; };
+		22D5B490290E451800D3067E /* CaricaDemo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22D5B48F290E451800D3067E /* CaricaDemo.mm */; };
+		22D5B495290E4ACD00D3067E /* Algorithm.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22D5B494290E4ACD00D3067E /* Algorithm.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		22D5B485290E43DF00D3067E /* Carica */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Carica; sourceTree = BUILT_PRODUCTS_DIR; };
 		22D5B488290E43DF00D3067E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		22D5B48F290E451800D3067E /* CaricaDemo.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CaricaDemo.mm; sourceTree = "<group>"; };
+		22D5B491290E480100D3067E /* CaricaDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaricaDemo.h; sourceTree = "<group>"; };
+		22D5B494290E4ACD00D3067E /* Algorithm.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Algorithm.mm; sourceTree = "<group>"; };
+		22D5B496290E4AF600D3067E /* Algorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Algorithm.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,29 @@
 		22D5B487290E43DF00D3067E /* Carica */ = {
 			isa = PBXGroup;
 			children = (
+				22D5B493290E4A7D00D3067E /* Algorithms */,
+				22D5B492290E492B00D3067E /* Learning */,
 				22D5B488290E43DF00D3067E /* main.cpp */,
 			);
 			path = Carica;
+			sourceTree = "<group>";
+		};
+		22D5B492290E492B00D3067E /* Learning */ = {
+			isa = PBXGroup;
+			children = (
+				22D5B48F290E451800D3067E /* CaricaDemo.mm */,
+				22D5B491290E480100D3067E /* CaricaDemo.h */,
+			);
+			path = Learning;
+			sourceTree = "<group>";
+		};
+		22D5B493290E4A7D00D3067E /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				22D5B494290E4ACD00D3067E /* Algorithm.mm */,
+				22D5B496290E4AF600D3067E /* Algorithm.h */,
+			);
+			path = Algorithms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				22D5B489290E43DF00D3067E /* main.cpp in Sources */,
+				22D5B495290E4ACD00D3067E /* Algorithm.mm in Sources */,
+				22D5B490290E451800D3067E /* CaricaDemo.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +269,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BWYFLGUJPY;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -251,6 +280,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BWYFLGUJPY;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
